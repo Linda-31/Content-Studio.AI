@@ -1,7 +1,7 @@
-# AI Content Studio (PydanticAI + Replicate)
+# AI Content Studio: AI-Powered Article and Image Generator(PydanticAI + Replicate)
 
-**Goal:**  
-A tool where users can generate both **text content** and **AI images** in one intuitive dashboard.
+**Summary:**  
+AI Content Studio is an **AI-powered article generator website** that allows users to create **structured text content** and **AI-generated images** in one dashboard, making content creation fast, organized, and visually appealing.
 
 ---
 
@@ -16,23 +16,15 @@ A tool where users can generate both **text content** and **AI images** in one i
 - **Preview Mode:**  
   Side-by-side card view displaying both **text** and **image** for easy review.
 
-- **Save Drafts:**  
-  Store generated results in **localStorage** for later editing or publishing.
-
-- **Routing:**  
-  - `/generate` → Generate new content  
-  - `/drafts` → View saved drafts  
-
 ---
 
 ## Technology Stack
 
-- **Frontend:** React.js, CSS/Bootstrap  
-- **Backend:** FastAPI / Python  
-- **AI Services:**  
-  - PydanticAI (text generation & validation)  
-  - Replicate (image generation)  
-- **Storage:** localStorage (for drafts)  
+| Layer / Component | Technology / Service |
+|------------------|--------------------|
+| Frontend         | React.js, CSS, Bootstrap |
+| Backend          | FastAPI, Python  |
+| AI Services      | PydanticAI (text generation & validation), Replicate (image generation) |
 
 ---
 
@@ -44,7 +36,6 @@ A tool where users can generate both **text content** and **AI images** in one i
 4. **Cover image** is generated via **Replicate** based on the title/summary.
 5. User can **preview** content and image side-by-side.
 6. Optionally, the user can **save the draft** to revisit later.
-7. Drafts are accessible via `/drafts` page.
 
 ---
 
@@ -52,7 +43,7 @@ A tool where users can generate both **text content** and **AI images** in one i
 
 | Title | Summary | Body | Cover Image |
 |-------|--------|------|-------------|
-| "The Future of AI" | "How AI is shaping tomorrow..." | "Artificial Intelligence is rapidly..." | ![AI Image](https://via.placeholder.com/150) |
+| "The Beautiful Garden" | "How AI is shaping tomorrow..." | "Artificial Intelligence is rapidly..." | ![AI Image](https://via.placeholder.com/150) |
 
 ---
 
@@ -64,8 +55,8 @@ git clone https://github.com/Linda-31/Content-Studio.AI.git
 cd Content-Studio.AI
 
 # Install dependencies
-npm install        # Frontend
-pip install -r requirements.txt   # Backend
+npm install       
+pip install -r requirements.txt   
 
 # Run backend (FastAPI)
 uvicorn app:app --reload
