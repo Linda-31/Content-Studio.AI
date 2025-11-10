@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# AI Content Studio (PydanticAI + Replicate)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Goal:**  
+A tool where users can generate both **text content** and **AI images** in one intuitive dashboard.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Text Generation:**  
+  Uses **PydanticAI** to structure blog/article output including **title, summary, and body**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Image Generation:**  
+  Uses **Replicate** to generate cover images automatically based on the generated title or summary.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Preview Mode:**  
+  Side-by-side card view displaying both **text** and **image** for easy review.
 
-### `npm test`
+- **Save Drafts:**  
+  Store generated results in **localStorage** for later editing or publishing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Routing:**  
+  - `/generate` → Generate new content  
+  - `/drafts` → View saved drafts  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend:** React.js, CSS/Bootstrap  
+- **Backend:** FastAPI / Python  
+- **AI Services:**  
+  - PydanticAI (text generation & validation)  
+  - Replicate (image generation)  
+- **Storage:** localStorage (for drafts)  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Workflow
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. User navigates to the **Generate** page.
+2. Enter a prompt or topic.
+3. **Text content** is generated via **PydanticAI**.
+4. **Cover image** is generated via **Replicate** based on the title/summary.
+5. User can **preview** content and image side-by-side.
+6. Optionally, the user can **save the draft** to revisit later.
+7. Drafts are accessible via `/drafts` page.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Output Example
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Title | Summary | Body | Cover Image |
+|-------|--------|------|-------------|
+| "The Future of AI" | "How AI is shaping tomorrow..." | "Artificial Intelligence is rapidly..." | ![AI Image](https://via.placeholder.com/150) |
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation & Run
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone the repo
+git clone https://github.com/Linda-31/Content-Studio.AI.git
+cd Content-Studio.AI
 
-### Code Splitting
+# Install dependencies
+npm install        # Frontend
+pip install -r requirements.txt   # Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Run backend (FastAPI)
+uvicorn app:app --reload
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Run frontend
+npm start
