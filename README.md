@@ -39,12 +39,12 @@ AI Content Studio is an **AI-powered article generator website** that allows use
 
 ---
 
-## 🎨 Output 
+## Output 
 
-### 🏠 Home Page
+### Home Page
 ![Home Page](./Assets/Home.png)
 
-### ✍️ Generate Page  
+### Generate Page  
 ![Generate Page](./Assets/generator.png)
 
 ---
