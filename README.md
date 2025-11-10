@@ -20,7 +20,7 @@ AI Content Studio is an **AI-powered article generator website** that allows use
 
 ## Technology Stack
 
-| Layer / Component | Technology / Service |
+| Layer  | Technology  |
 |------------------|--------------------|
 | Frontend         | React.js, CSS, Bootstrap |
 | Backend          | FastAPI, Python  |
@@ -39,13 +39,22 @@ AI Content Studio is an **AI-powered article generator website** that allows use
 
 ---
 
-## Output Example
+## Output 
 
-| Title | Summary | Body | Cover Image |
-|-------|--------|------|-------------|
-| "The Beautiful Garden" | "How AI is shaping tomorrow..." | "Artificial Intelligence is rapidly..." | ![AI Image](https://via.placeholder.com/150) |
+### Home Page
+![Home Page](https://via.placeholder.com/600x300?text=Home+Page)
+
+### Generate Page  
+![Generate Page](https://via.placeholder.com/600x300?text=Generate+Page)
+
+### Drafts Page
+![Drafts Page](https://via.placeholder.com/600x300?text=Drafts+Page)
 
 ---
+## 🌐 Live Demo
+
+**Access Here:**  
+[Open Live Demo](https://YOUR_LIVE_DEMO_LINK)
 
 ## Installation & Run
 
