@@ -49,10 +49,10 @@ AI Content Studio is an **AI-powered article generator website** that allows use
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Watch Live Demo on YouTube:
 
 **🔗 Access Here:**  
-[Open Live Demo](https://YOUR_LIVE_DEMO_LINK)
+[Open Live Demo](https://youtu.be/IgbnJtmcil0)
 
 ---
 
